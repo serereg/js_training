@@ -1,7 +1,25 @@
 <!DOCTYPE html>
+
 <head>
-    <script src = "1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>    
+    <script class="mocha-init">
+        // включаем режим тестирования в стиле BDD
+        mocha.setup('bdd');
+
+        // chai предоставляет большое количество функций. Объявим assert глобально
+        let assert = chai.assert;
+    </script>
+    <script src="3.js"></script>
 </head>
+
 <body>
     nothing
+    <!-- элемент с id="mocha" будет содержать результаты тестов -->
+    <div id="mocha"></div>
+ 
+    <!-- скрипт со спецификацией (describe, it...) -->
+    <script src="test.js" type="module"></script>
+
 </body>
