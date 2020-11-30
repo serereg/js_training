@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<script>
+'use strict';
+
+function sum(x)
+{
+    let accum = x;
+
+    function f(v)
+    {
+        accum += v;
+        return f;
+    };
+    f.toString = function() 
+    {
+        return accum;
+    };
+    return f;
+};
+
+// function sum(a) {
+
+// let currentSum = a;
+
+// function f(b) {
+//   currentSum += b;
+//   return f;
+// }
+
+// f.toString = function() {
+//   return currentSum;
+// };
+
+// return f;
+// }
+
+let a = sum(1)(2)(3)
+alert(a);
+</script>
