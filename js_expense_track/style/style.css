@@ -1,0 +1,60 @@
+
+
+h1
+{
+    font-family: arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2
+{
+    font-family: arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: green;
+}
+
+#addExpence
+{
+    align-items: center;
+    font-family: arial, sans-serif;
+    font-size: 2em;
+    background-color: green;
+}
+
+#div_button
+{
+    text-align: center;
+}
+
+table
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 9px;
+}
+
+tr:nth-child(even) 
+{
+    background-color: #dddddd;
+}
+
+input
+{
+    font-family: arial, sans-serif;
+    padding: 9px;
+}
+
+label
+{
+    font-family: arial, sans-serif;
+    font-size: 1.5em;
+}

@@ -2,24 +2,29 @@
 <html>
 
 <head>
+    <link  rel="stylesheet" href="style/style.css"/>
     <script src="script/script.js"></script>
 </head>
 
 <body>
-    <p>Expense</p>
+    <h1>Expense Tracker</h1>
+    <h2>Add A New Item</h2>
+
     <div id="adding">
-        <label for="name">Введите число</label>
-        <input id="name"> 
+        <label for="name">Name</label>
+        <input id="name" placeholder='Where were the expencive made'> 
         <br>
 
-        <label for="date">Введите число</label>
-        <input id="date">
+        <label for="date">Date</label>
+        <input id="date" type='date'>
         
-        <label for="amount">Введите число</label>
+        <label for="amount">Amount</label>
         <input id="amount">
         
-        <br>
-        <button id="addExpence">Add Expence</button>
+        <div id=div_button>
+            <br>
+            <button id="addExpence">Add Expence</button>
+        </div>
 
     </div>
     <div>
