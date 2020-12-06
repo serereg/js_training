@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href="style/style.css"/>
+    
+</head>
+
+<body>
+    <h1>Note Tracker</h1>
+    <h2>Add a New Note</h2>
+    <label for='noteText'>Note:</label>
+    <input id='noteText' placeholder="type a note">
+    <br>
+    <div id='controlNote'>
+        <button id='addNote'>Add Note</button>
+    </div>
+
+    <div id='modal' class='modal'>
+        <div class='modal-content'>
+            <span class='close'>&times;</span>
+            <p>txt</p>
+        </div>
+    </div>
+
+    <table id='tableNotes'>
+        <caption>Notes</caption>
+        <thead>
+            <th>1</th>
+            <th>2</th>
+        </thead>
+        <tfoot>
+            <th>3</th>
+            <th>4</th>
+        </tfoot>
+        <tbody>
+            <td>data one</td>
+            <td>data two</td>
+        </tbody>    
+
+    </table>
+
+    <!-- TODO: how to move script to head -->
+    <script src='script/script.js'></script>
+</body>
