@@ -70,5 +70,20 @@ function createDivNote(text)
 {
     let input = document.createElement('input');
     input.value = text;
+    input.onclick = () => {showModal(text)};
     return input;
+}
+
+function showModal(text)
+{
+    let text_field = document.createElement('textarea');
+    text_field.rows = 10;
+    text_field.readOnly = true;
+    text_field.classList.add('modal_text');
+    text_field.value = text;
+    // let modal_content = document.getElementById('modal-content');
+    let modal_content = document.getElementById('modal_text');
+    modal_content.innerHTML = "";
+    modal_content.append(text_field);
+    modal.style.display = 'block'; 
 }

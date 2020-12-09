@@ -6,34 +6,36 @@
 
 <body>
     <h1>Note Tracker</h1>
-    <h2>Add a New Note</h2>
-    <label for='noteText'>Note:</label>
-    <input id='noteText' placeholder="type a note">
+    <h2>Добавить запись</h2>
+    <!-- <label for='noteText'>Note:</label> -->
+    <input id='noteText' placeholder="новая запись">
     <br>
     <div id='controlNote'>
-        <button id='addNote'>Add Note</button>
+        <button id='addNote'>Добавить</button>
     </div>
 
     <div id='modal' class='modal'>
         <div class='modal-content'>
             <span class='close'>&times;</span>
-            <p>txt</p>
+            <div id='modal_text'>
+
+            </div>
         </div>
     </div>
 
     <table id='tableNotes'>
-        <caption>Notes</caption>
-        <thead>
+        <!--  <caption>Notes</caption>
+       <thead>
             <th>1</th>
             <th>2</th>
         </thead>
         <tfoot>
             <th>3</th>
             <th>4</th>
-        </tfoot>
+        </tfoot> -->
         <tbody>
-            <td>data one</td>
-            <td>data two</td>
+            <!-- <td>data one</td>
+            <td>data two</td> -->
         </tbody>    
 
     </table>
